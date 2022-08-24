@@ -1,0 +1,69 @@
+\documentclass[14pt]{extreport}
+
+\usepackage{geometry}
+\geometry{a4paper,
+          total={165mm,257mm},
+          left=30mm,
+          top=20mm,
+         }
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+\usepackage[
+    backend = biber,
+    style = numeric,
+]{biblatex}
+
+\addbibresource{Refs.bib}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{cmap}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Titanic dataset analysis},
+    pdfpagemode=FullScreen
+}
+\urlstyle{same}
+
+
+\title{Titanic dataset analysis}
+\author{Bogachev Aleksei}
+\date{\today}
+
+
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+        Data analysis and models for the legendary machine learning
+        competition on \href{https://www.kaggle.com/c/titanic}{Kaggle}.
+    \end{abstract}
+
+    \tableofcontents
+
+    % \pagebreak
+
+    \input{introduction}
+
+    % \pagebreak
+
+    \input{task_description}
+
+    % \pagebreak
+    
+    \printbibliography[heading=bibintoc, 
+                       title={References}]
+
+\end{document}
