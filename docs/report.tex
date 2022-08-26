@@ -22,6 +22,8 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
+\usepackage[table,xcdraw]{xcolor}
+
 \usepackage{cmap}
 
 \usepackage{hyperref}
@@ -53,16 +55,14 @@
 
     \tableofcontents
 
-    % \pagebreak
-
     \input{introduction}
 
-    % \pagebreak
-
     \input{task_description}
-
-    % \pagebreak
     
+    \input{preliminary_analysis}
+
+    \input{sample_test_set}
+
     \printbibliography[heading=bibintoc, 
                        title={References}]
 
