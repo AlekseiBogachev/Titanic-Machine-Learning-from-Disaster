@@ -8,9 +8,11 @@ to maintain equal ratio of men and women in the train set and the test set.
 Women seem to have had a better chance of surviving due to the "women and
 children first" protocol for loading lifeboats.
 
-First, let's check how many passengers survived. There are 342 survived 
-passengers and 549 drowned passengers in the dataset. Figure 
-\ref{number_of_survivors} illustrates these numbers.
+First, let's check how many passengers survived. Figure 
+\ref{number_of_survivors} illustrates these numbers. There are 342 (38.38\%)
+survived passengers and 549 (61.62\%) drowned passengers in the dataset, 
+so the dataset is a bit skewed. However, it's most likely, there will be 
+enough representatives of both classes in the test set.
 
 \begin{figure}[!ht]
 	\centering
@@ -18,6 +20,11 @@ passengers and 549 drowned passengers in the dataset. Figure
 	\caption{Number of survived and drowned passangers in whole dataset.}
 	\label{number_of_survivors}
 \end{figure}
+
+Next, let's check the proportion of women among all survivors (figure
+\ref{proportion_of_survived_women}), and check the proportion of survived
+women in each \textbf{"Pclass"} (figure 
+\ref{proportion_of_survived_women_among_pclasses}).
 
 \begin{figure}[!ht]
 	\centering
@@ -32,3 +39,10 @@ passengers and 549 drowned passengers in the dataset. Figure
 	\caption{Proporotion of survived women and men in each \textbf{"Pclass"}.}
 	\label{proportion_of_survived_women_among_pclasses}
 \end{figure}
+
+Figures \ref{proportion_of_survived_women} and 
+\ref{proportion_of_survived_women_among_pclasses} show that in the entire 
+dataset and in each \textbf{"Pclass"}, there are more female survivors 
+than males. Thus it is reasonable to do stratification based on the
+passenger's gender. I will use 80\% of the data for training and hold 
+out 20\% for testing, refer to the Jupyter Notebook for details.
