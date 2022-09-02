@@ -29,7 +29,7 @@ An excerpt from the dataset is presented in the table
 \end{table}
 
 The \textbf{"PassengerId"} feature is the ID of the passanger. It won't 
-help in analysis and will be dropped. Also, there are several missing 
+help in the analysis and will be dropped. Also, there are several missing 
 values, and some values are categorical, for example, \textbf{"Pclass"}
 and \textbf{"Sex"}.
 
@@ -108,16 +108,16 @@ each column.
 	\label{table:unique_values}
 \end{table}
 
-There are high-cardinality features with object dtype:
+There are high-cardinality features with \textit{object} dtype:
 \begin{itemize}
 	\item Name
 	\item Ticket
 	\item Cabin
 	\item PassengerId
 \end{itemize}
-This features, possibly, will need special preprocessing. Earlier, I 
-noticed that the \textbf{"PassengerId"} feature is the ID of the 
-passanger. It won't help in analysis and will be dropped. Features 
+This features, possibly, will need special preprocessing. Earlier, I
+noticed that the \textbf{"PassengerId"} feature is the ID of the
+passanger. It won't help in the analysis and will be dropped. Features
 \textbf{"Age"} and \textbf{"Fare"} are continuous.
 
 
@@ -150,7 +150,7 @@ and \ref{table:categorical_variable_description} respectively.
 	\caption{Summary statistics for non-numerical attributes}
 	\begin{tabular}{|r|r|r|r|r|r|}
 		\hline
-		\textbf{}       & \textbf{Name}           & \textbf{Sex} & \textbf{Ticket} & \textbf{Cabin} & \textbf{Embarked} \\ \hline
+		                & \textbf{Name}           & \textbf{Sex} & \textbf{Ticket} & \textbf{Cabin} & \textbf{Embarked} \\ \hline
 		\textbf{count}  & 891                     & 891          & 891             & 204            & 889               \\ \hline
 		\textbf{unique} & 891                     & 2            & 681             & 147            & 3                 \\ \hline
 		\textbf{top}    & Braund, Mr. Owen Harris & male         & 347082          & B96 B98        & S                 \\ \hline
