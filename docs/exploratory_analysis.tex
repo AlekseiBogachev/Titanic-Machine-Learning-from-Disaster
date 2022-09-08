@@ -31,6 +31,8 @@ shows numbers of survived and drowned passengers in whole dataset.
 
 
 \section{Pclass} \label{section:Pclass}
+
+\subsection{Description}
 The \textbf{Pclass} attribute contains information about socio-economic
 status of the passenger:
 \begin{itemize}
@@ -38,6 +40,54 @@ status of the passenger:
     \item 2nd = Middle
     \item 3rd = Lower
 \end{itemize}
+
+The table \ref{table:pclass_head} contains excerpt from attribute's column.
+The table \ref{table:pclass_characteristics} contains the attribute 
+characteristics.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Excerpt from the \textbf{Pclass} column}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+        \textbf{Index}     & 788 & 347 & 629 & 734 & 106 \\ \hline
+        \textbf{Attribute} & 3   & 3   & 3   & 2   & 3   \\ \hline
+    \end{tabular}
+    \label{table:pclass_head}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \caption{Attribute characteristics}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Characteristic}   & \textbf{Value} \\ \hline
+        Type                      & categorical    \\ \hline
+        Number of values          & 712            \\ \hline
+        Number of non-null values & 712            \\ \hline
+        Number of unique values   & 3              \\ \hline
+        Most frequent value       & 3              \\ \hline
+    \end{tabular}
+    \label{table:pclass_characteristics}
+\end{table}
+
+The table \ref{table:pclass_value_counts} contains the number of occurrences of
+each value.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Number of occurrences of each value}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Value} & \textbf{Number} \\ \hline
+        3              & 402             \\ \hline
+        1              & 172             \\ \hline
+        2              & 138             \\ \hline
+    \end{tabular}
+    \label{table:pclass_value_counts}
+\end{table}
+
+\subsection{Analysis}
 Let's estimate the number of passengers of each class in the exploratory
 set. The figure \ref{pic:pclass_count} illustrates this estimation.
 
@@ -92,12 +142,12 @@ seems to be a useful pattern.
     \caption{Excerpt from the \textbf{Name} column of the exploratory set}
     \begin{tabular}{|l|l|}
         \hline
-                     & \textbf{Name}                             \\ \hline
-        \textbf{788} & Dean, Master. Bertram Vere                \\ \hline
-        \textbf{347} & Davison, Mrs. Thomas Henry (Mary E Finck) \\ \hline
-        \textbf{629} & O'Connell, Mr. Patrick D                  \\ \hline
-        \textbf{734} & Troupiansky, Mr. Moses Aaron              \\ \hline
-        \textbf{106} & Salkjelsvik, Miss. Anna Kristine          \\ \hline
+        \textbf{Index} & \textbf{Name}                             \\ \hline
+        788            & Dean, Master. Bertram Vere                \\ \hline
+        347            & Davison, Mrs. Thomas Henry (Mary E Finck) \\ \hline
+        629            & O'Connell, Mr. Patrick D                  \\ \hline
+        734            & Troupiansky, Mr. Moses Aaron              \\ \hline
+        106            & Salkjelsvik, Miss. Anna Kristine          \\ \hline
     \end{tabular}
     \label{table:name_column_excerpt}
 \end{table}
