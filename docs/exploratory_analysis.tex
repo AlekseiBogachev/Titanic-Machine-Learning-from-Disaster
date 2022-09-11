@@ -426,7 +426,7 @@ At last, let's look on the distributions of representatives of each
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.75\textwidth]{age_by_title_cat}
+    \includegraphics[width=\textwidth]{age_by_title_cat}
     \caption{Distributions of representatives of each title by age}
     \label{pic:age_by_title_cat}
 \end{figure}
@@ -439,6 +439,9 @@ sister, stepbrother, stepsister) or spouses (husband, wife) aboard the
 Titanic. The table \ref{table:sibsp_head} contains excerpt from 
 attribute's column. The table \ref{table:sibsp_characteristics} contains
 the attribute characteristics.
+
+There is not so many unique values, so let's count number of occurrences 
+of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
 
 \begin{table}[!ht]
     \centering
@@ -453,7 +456,7 @@ the attribute characteristics.
 
 \begin{table}[!ht]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Number of occurrences of each value}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value}              \\ \hline
@@ -468,11 +471,44 @@ the attribute characteristics.
         75\%                      & 1.000000                    \\ \hline
         max                       & 8.000000                    \\ \hline
     \end{tabular}
-    \label{table:age_characteristics}
+    \label{table:sibsp_characteristics}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \caption{Attribute characteristics}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}
+        \hline
+        \textbf{Value}  & 0   & 1   & 2  & 4  & 3  & 8 & 5 \\ \hline
+        \textbf{Number} & 477 & 171 & 25 & 16 & 13 & 5 & 5 \\ \hline
+    \end{tabular}
+    \label{table:sibsp_value_counts}
 \end{table}
 
 \subsection{Analysis}
-Attribure Analysis
+Let's first examine the distribution of the attribute's values. The
+distribution is shown in the figure \ref{pic:sibsp_distribution}. This
+distribution is skewed and tail-heave. In truth, it's more like an 
+exponential distribution.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sibsp_distribution}
+    \caption{Distributions of the \textbf{SibSp} attribute's values}
+    \label{pic:sibsp_distribution}
+\end{figure}
+
+The figure \ref{pic:sibsp_survival_rate} shows the proportion of survived
+passengers for each \textbf{SibSp} value. It seems that passengers with
+one sibling or spose had more chances to survive.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sibsp_survival_rate}
+    \caption{Proportion of survived passengers for each \textbf{SibSp}
+             value}
+    \label{pic:sibsp_survival_rate}
+\end{figure}
 
 
 \section{Parch} \label{section:Parch}
