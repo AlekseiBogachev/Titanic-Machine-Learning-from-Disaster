@@ -45,18 +45,18 @@ The table \ref{table:pclass_head} contains excerpt from attribute's column.
 The table \ref{table:pclass_characteristics} contains the attribute 
 characteristics.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Pclass} column}
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
-        \textbf{Index}     & 788 & 347 & 629 & 734 & 106 \\ \hline
-        \textbf{Attribute} & 3   & 3   & 3   & 2   & 3   \\ \hline
+        \textbf{Index} & 788 & 347 & 629 & 734 & 106 \\ \hline
+        \textbf{Value} & 3   & 3   & 3   & 2   & 3   \\ \hline
     \end{tabular}
     \label{table:pclass_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -74,7 +74,7 @@ characteristics.
 The table \ref{table:pclass_value_counts} contains the number of occurrences of
 each value.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Number of occurrences of each value}
     \begin{tabular}{|l|l|}
@@ -91,7 +91,7 @@ each value.
 Let's estimate the number of passengers of each class in the exploratory
 set. The figure \ref{pic:pclass_count} illustrates this estimation.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{pclass_count}
     \caption{Number of passengers in each \textbf{Pclass}}
@@ -101,7 +101,7 @@ set. The figure \ref{pic:pclass_count} illustrates this estimation.
 The figure \ref{pic:pclass_survived_entire_dataset} shows the proportions
 of survived passengers for each \textbf{Pclass} in the exploratory set.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{pclass_survived_entire_dataset}
     \caption{Proportion of survived passengers in each \textbf{Pclass}}
@@ -120,7 +120,7 @@ Finally, let's check the proportion of women among the survivors of each
 \textbf{Pclass}. Figure \ref{pic:pclass_survived_gender} show these 
 proportions.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{pclass_survived_gender}
     \caption{Proportion of survived passengers of eache gender in each \textbf{Pclass}}
@@ -138,7 +138,7 @@ once. The table \ref{table:name_column_excerpt} shows the exerpt from
 this column. The table \ref{table:name_characteristics} contains the 
 attribute characteristics.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Name} column}
     \begin{tabular}{|l|l|}
@@ -153,7 +153,7 @@ attribute characteristics.
     \label{table:name_column_excerpt}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -177,7 +177,7 @@ name and count how many times each title occurs in the exploratory set.
 The results is shown in the table \ref{table:titles_number} and figure 
 \ref{pic:title_count}.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Number of occurrences of each title}
     \begin{tabular}{|
@@ -197,7 +197,7 @@ The results is shown in the table \ref{table:titles_number} and figure
     \label{table:titles_number}
 \end{table}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{title_count}
     \caption{Number of occurrences of each title}
@@ -207,7 +207,7 @@ The results is shown in the table \ref{table:titles_number} and figure
 Several titles occurs extremely rarely, the figure \ref{pic:title_belonging_to_class}
 shows what \textbf{Pclass} these titles belong to.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{title_belonging_to_class}
     \caption{\textbf{Title}s belonging to \textbf{Pclass}es}
@@ -224,7 +224,7 @@ figure \ref{pic:generalized_title_belonging_to_class} shows what
 \textbf{Pclass} the titles with new \textit{'aristocratic'} category 
 belong to.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{generalized_title_belonging_to_class}
     \caption{\textbf{Title}s belonging to \textbf{Pclass}es}
@@ -236,7 +236,7 @@ in the new \textbf{Title} feature and the survival rate for men and women
 with the title \textit{'aristocratic'}. Figures \ref{pic:title_survival}
 and \ref{pic:aristocratic_gender_survival} show respective results.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{title_survival}
     \caption{proportion of survived passengers for each value in the new
@@ -244,7 +244,7 @@ and \ref{pic:aristocratic_gender_survival} show respective results.
     \label{pic:title_survival}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{aristocratic_gender_survival}
     \caption{Survival rate for men and women with the title 
@@ -271,7 +271,7 @@ from this column. The table \ref{table:sex_characteristics} contains the
 attribute characteristics. The table \ref{table:sex_value_counts} contains 
 the number of occurrences of each value.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Sex} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -282,7 +282,7 @@ the number of occurrences of each value.
     \label{table:excerpt_from_sex_column}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -297,7 +297,7 @@ the number of occurrences of each value.
     \label{table:sex_characteristics}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Number of occurrences of each value}
     \begin{tabular}{|l|l|}
@@ -344,7 +344,7 @@ The \textbf{Age} attribute contains age of a passenger. The table
 \ref{table:age_head} contains excerpt from attribute's column. The table
 \ref{table:age_characteristics} contains the attribute characteristics.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Age} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -355,7 +355,7 @@ The \textbf{Age} attribute contains age of a passenger. The table
     \label{table:age_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -380,14 +380,14 @@ At first, let's study the distribution of the \textbf{Age} attribute.
 The figures \ref{pic:age_distribution} and \ref{pic:age_ecdf} show the 
 histogram with KDE and ECDF respectively.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{age_distribution}
     \caption{Histogram of the \textbf{Age} attribute}
     \label{pic:age_distribution}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{age_ecdf}
     \caption{ECDF of the \textbf{Age} attribute}
@@ -402,7 +402,7 @@ younger. The figure \ref{pic:age_by_survived_cat} illustrates distribution
 of survived and drowned passengers by age. The obvious pattern is not 
 visible here.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{age_by_survived_cat}
     \caption{Distributions of survived and drowned passengers by age}
@@ -413,7 +413,7 @@ Let's check the distribution of passengers by age in each \textbf{Pclass}.
 The corresponding boxplots are shown in the figure \ref{pic:age_by_pclass_cat}.
 People from higher socio-economic classes appear to be older.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{age_by_pclass_cat}
     \caption{Distributions of passengers by age in each \textbf{Pclass}}
@@ -424,7 +424,7 @@ At last, let's look on the distributions of representatives of each
 \textbf{Title} by age. The corresponding boxplots are shown in the figure 
 \ref{pic:age_by_title_cat}.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=\textwidth]{age_by_title_cat}
     \caption{Distributions of representatives of each title by age}
@@ -443,7 +443,7 @@ the attribute characteristics.
 There is not so many unique values, so let's count number of occurrences 
 of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{SibSp} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -454,7 +454,7 @@ of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
     \label{table:sibsp_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -474,7 +474,7 @@ of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
     \label{table:sibsp_characteristics}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Number of occurrences of each value}
     \begin{tabular}{|l|l|l|l|l|l|l|l|}
@@ -491,7 +491,7 @@ distribution is shown in the figure \ref{pic:sibsp_distribution}. This
 distribution is skewed and tail-heave. In truth, it's more like an 
 exponential distribution.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{sibsp_distribution}
     \caption{Distributions of the \textbf{SibSp} attribute's values}
@@ -502,7 +502,7 @@ The figure \ref{pic:sibsp_survival_rate} shows the proportion of survived
 passengers for each \textbf{SibSp} value. It seems that passengers with
 one sibling or spose had more chances to survive.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{sibsp_survival_rate}
     \caption{Proportion of survived passengers for each \textbf{SibSp}
@@ -519,7 +519,7 @@ this column. The table \ref{table:parch_characteristics} contains the
 attribute characteristics. The table \ref{table:parch_value_counts} contains
 the number of occurences of each value.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Parch} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -530,7 +530,7 @@ the number of occurences of each value.
     \label{table:parch_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -550,7 +550,7 @@ the number of occurences of each value.
     \label{table:parch_characteristics}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Number of occurrences of each value}
     \begin{tabular}{|l|l|l|l|l|l|l|l|}
@@ -566,14 +566,14 @@ Let's study the distribution of the attribute's values and the proportion
 of survived passengers for each \textbf{Parch} value. This plots are shown
 in the figures \ref{pic:parch_distribution} and \ref{pic:parch_survival_rate}.
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{parch_distribution}
     \caption{Distributions of the \textbf{Parch} attribute's values}
     \label{pic:parch_distribution}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{parch_survival_rate}
     \caption{Proportion of survived passengers for each \textbf{Parch} value}
@@ -593,7 +593,7 @@ likely useless for analysis. The tables \ref{table:ticket_head} and
 \ref{table:ticket_characteristics} show an excerpt from this column and 
 the attribute characteristics respectively.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Ticket} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -604,7 +604,7 @@ the attribute characteristics respectively.
     \label{table:ticket_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -626,7 +626,7 @@ This attribure contains the passenger fare. The tables
 \ref{table:fare_head} and \ref{table:ticket_characteristics} show an 
 excerpt from this column and the attribute characteristics respectively.
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Excerpt from the \textbf{Fare} column}
     \begin{tabular}{|l|l|l|l|l|l|}
@@ -637,7 +637,7 @@ excerpt from this column and the attribute characteristics respectively.
     \label{table:fare_head}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!hp]
     \centering
     \caption{Attribute characteristics}
     \begin{tabular}{|l|l|}
@@ -658,22 +658,34 @@ excerpt from this column and the attribute characteristics respectively.
 \end{table}
 
 \subsection{Analysis}
+The distribution of values is skewed and tail-heavy, perhaps loser to 
+lognormal distribution. The figure \ref{pic:fare_distribution} shows the
+histogram.
 
-\begin{figure}[!ht]
+Figure \ref{pic:fare_distribution_by_pclass} shows boxplots for
+each \textbf{Pclass} value. The distributions of \textbf{Fare} in each
+\textbf{Pclass} are quite different, so it's resonable to concider them 
+separately. The figure \ref{pic:fare_distribution_by_pclass_and_survived}
+show the boxplots of fare paid by survived and drowned passengers 
+separately for each \textbf{Pclass}. There is no obvious pattern, but 
+perhaps in first class, the owners of more expensive tickets had a better 
+chance of surviving.
+
+\begin{figure}[!hp]
     \centering
-    \includegraphics[width=0.75\textwidth]{fare_distribution}
+    \includegraphics[width=\textwidth]{fare_distribution}
     \caption{Histogram of the \textbf{Fare} attribute}
     \label{pic:fare_distribution}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
-    \includegraphics[width=0.75\textwidth]{fare_distribution_by_pclass}
+    \includegraphics[width=\textwidth]{fare_distribution_by_pclass}
     \caption{Distributions of the passenger fare by \textbf{Pclass}}
     \label{pic:fare_distribution_by_pclass}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!hp]
     \centering
     \includegraphics[width=\textwidth]{fare_distribution_by_pclass_and_survived}
     \caption{Distributions of fares for survivors and drowned passengers grouped by \textbf{Pclass}}
@@ -682,23 +694,117 @@ excerpt from this column and the attribute characteristics respectively.
 
 
 \section{Cabin} \label{section:Cabin}
-\subsection{Description}
-Attribure description
-\textbf{Cabin} -- Cabin number, for example, C85.
+The \textbf{Cabin} attribute contains the cabin number, for example, C85.
+This attribute has 128 unique values out of 164 non-null values, thus it 
+is most likely useless for analysis. However, we can use the presence of
+a non-nul values as a feature. The tables \ref{table:cabin_head} and 
+\ref{table:cabin_characteristics} show an excerpt from this column and 
+the attribute characteristics respectively.
 
-\subsection{Analysis}
-Attribure Analysis
+\begin{table}[!hp]
+    \centering
+    \caption{Excerpt from the \textbf{Ticket} column}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+        \textbf{Index} & 788 & 347 & 629 & 734 & 106 \\ \hline
+        \textbf{Value} & NaN & NaN & NaN & NaN & NaN \\ \hline
+    \end{tabular}
+    \label{table:cabin_head}
+\end{table}
+
+\begin{table}[!hp]
+    \centering
+    \caption{Attribute characteristics}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Characteristic}   & \textbf{Value} \\ \hline
+        Type                      & object         \\ \hline
+        Number of values          & 712            \\ \hline
+        Number of non-null values & 164            \\ \hline
+        Number of unique values   & 128            \\ \hline
+        Most frequent value       & C23 C25 C27    \\ \hline
+    \end{tabular}
+    \label{table:cabin_characteristics}
+\end{table}
 
 
 \section{Embarked} \label{section:Embarked}
 \subsection{Description}
-Attribure description
-\textbf{Embarked} -- Port of Embarkation:
+The \textbf{Embarked} attribute contains information about port of 
+embarcation:
 \begin{itemize}
     \item C = Cherbourg,
     \item Q = Queenstown,
     \item S = Southampton.
 \end{itemize}
 
+The table \ref{table:embarked_head} contains excerpt from attribute's column.
+The table \ref{table:embarked_characteristics} contains the attribute 
+characteristics.
+
+\begin{table}[!hp]
+    \centering
+    \caption{Excerpt from the \textbf{Embarked} column}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+        \textbf{Index} & 788 & 347 & 629 & 734 & 106 \\ \hline
+        \textbf{Value} & S   & S   & Q   & S   & S   \\ \hline
+    \end{tabular}
+    \label{table:embarked_head}
+\end{table}
+
+\begin{table}[!hp]
+    \centering
+    \caption{Attribute characteristics}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Characteristic}   & \textbf{Value} \\ \hline
+        Type                      & category       \\ \hline
+        Number of values          & 712            \\ \hline
+        Number of non-null values & 710            \\ \hline
+        Number of unique values   & 3              \\ \hline
+        Most frequent value       & S              \\ \hline
+    \end{tabular}
+    \label{table:embarked_characteristics}
+\end{table}
+
+The table \ref{table:embarked_value_counts} contains the number of occurrences 
+of each value.
+
+\begin{table}[!hp]
+    \centering
+    \caption{Number of occurrences of each value}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Value} & \textbf{Number} \\ \hline
+        S              & 515             \\ \hline
+        C              & 132             \\ \hline
+        Q              &  63             \\ \hline
+    \end{tabular}
+    \label{table:embarked_value_counts}
+\end{table}
+
 \subsection{Analysis}
-Attribure Analysis
+As it shown on the figure \ref{pic:embarked_distribution}, most of the 
+passengers boarded the ship at Southampton.
+
+\begin{figure}[!hp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{embarked_distribution}
+    \caption{The distribution of number of passengers by the port of embarkation}
+    \label{pic:embarked_distribution}
+\end{figure}
+
+\begin{figure}[!hp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{embarked_survival_rate}
+    \caption{The proportion of survived passengers by the port of embarkation}
+    \label{pic:embarked_survival_rate}
+\end{figure}
+
+\begin{figure}[!hp]
+    \centering
+    \includegraphics[width=\textwidth]{embarked_survival_rate_by_pclass}
+    \caption{The proportion of survived passengers by the port of embarkation separately for each \textbf{Pclass}}
+    \label{pic:embarked_survival_rate_by_pclass}
+\end{figure}
