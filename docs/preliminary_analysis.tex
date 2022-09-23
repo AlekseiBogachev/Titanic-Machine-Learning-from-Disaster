@@ -117,8 +117,9 @@ There are high-cardinality features with \textit{object} dtype:
 \end{itemize}
 This features, possibly, will need special preprocessing. Earlier, I
 noticed that the \textbf{"PassengerId"} feature is the ID of the
-passanger. It won't help in the analysis and will be dropped. Features
-\textbf{"Age"} and \textbf{"Fare"} are continuous.
+passanger. It won't help in the analysis and will be dropped. 
+
+Features \textbf{"Age"} and \textbf{"Fare"} are continuous.
 
 
 \section{Summary statistics}
@@ -158,3 +159,20 @@ and \ref{table:categorical_variable_description} respectively.
 	\end{tabular}
 	\label{table:categorical_variable_description}
 \end{table}
+
+
+\section{Proportion of target values}
+
+Let's check if one class of target values is more frequent than another.
+
+Figure \ref{number_of_survivors} illustrates these numbers. There are 342 
+(38.38\%) survived passengers and 549 (61.62\%) drowned passengers in the 
+dataset, so the dataset is a bit skewed. Therefore, the accuracy may not be 
+sufficient to assess the performance of classifiers.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{number_of_survivors}
+	\caption{Number of survived and drowned passangers in whole dataset}
+	\label{number_of_survivors}
+\end{figure}

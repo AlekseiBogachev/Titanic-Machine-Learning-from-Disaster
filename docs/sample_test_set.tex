@@ -3,23 +3,10 @@ The test set will be used to evaluate performance of a very final model
 and forecast the score in the competitions leaderboard. It may seems like
 it's to early to create a test set, but I'll do it to prevent data snooping.
 
-I'm going to do stratified sampling with scikit-learn's StraifiedShuffleSplit
+I'm going to do stratified sampling with scikit-learn's \texttt{StraifiedShuffleSplit}
 to maintain equal ratio of men and women in the train set and the test set.
 Women seem to have had a better chance of surviving due to the "women and
 children first" protocol for loading lifeboats.
-
-First, let's check how many passengers survived. Figure 
-\ref{number_of_survivors} illustrates these numbers. There are 342 (38.38\%)
-survived passengers and 549 (61.62\%) drowned passengers in the dataset, 
-so the dataset is a bit skewed. However, it's most likely, there will be 
-enough representatives of both classes in the test set.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=0.5\textwidth]{number_of_survivors}
-	\caption{Number of survived and drowned passangers in whole dataset}
-	\label{number_of_survivors}
-\end{figure}
 
 Next, let's check the proportion of women among all survivors (figure
 \ref{proportion_of_survived_women}), and check the proportion of survived
