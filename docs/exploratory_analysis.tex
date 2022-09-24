@@ -58,7 +58,7 @@ characteristics.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Pclass} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -76,7 +76,7 @@ each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each value}
+    \caption{Number of occurrences of each value in the \textbf{Pclass} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Value} & \textbf{Number} \\ \hline
@@ -155,7 +155,7 @@ attribute characteristics.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Name} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -179,7 +179,7 @@ The results is shown in the table \ref{table:titles_number} and figure
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each title}
+    \caption{Number of occurrences of each title in the \textbf{Name} attribute}
     \begin{tabular}{|
     >{\columncolor[HTML]{C0C0C0}}l |l|
     >{\columncolor[HTML]{C0C0C0}}l |l|}
@@ -200,7 +200,7 @@ The results is shown in the table \ref{table:titles_number} and figure
 \begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{title_count}
-    \caption{Number of occurrences of each title}
+    \caption{Number of occurrences of each title in the \textbf{Name} attribute}
     \label{pic:title_count}
 \end{figure}
 
@@ -284,7 +284,7 @@ the number of occurrences of each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Sex} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -299,7 +299,7 @@ the number of occurrences of each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each value}
+    \caption{Number of occurrences of each value of the \textbf{Sex} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Value}  & \textbf{Number} \\ \hline
@@ -357,7 +357,7 @@ The \textbf{Age} attribute contains age of a passenger. The table
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Age} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value}                  \\ \hline
@@ -395,7 +395,8 @@ histogram with KDE and ECDF respectively.
 \end{figure}
 
 Obviously, the distribution is skewed and tail-heavy, so we may need to 
-do some transformations, such as standardization.
+do some transformations, such as standardization. Also, it's continuous 
+feature, so we may need to discretize it.
 
 Next, I'm going to test the assumption that the surviving passengers are 
 younger. The figure \ref{pic:age_by_survived_cat} illustrates distribution 
@@ -456,7 +457,7 @@ of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{SibSp} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value}              \\ \hline
@@ -476,7 +477,8 @@ of each value. The results is shown in the table \ref{table:sibsp_value_counts}.
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each value}
+    \caption{Number of occurrences of each value of the \textbf{SibSp}
+             attribute}
     \begin{tabular}{|l|l|l|l|l|l|l|l|}
         \hline
         \textbf{Value}  & 0   & 1   & 2  & 4  & 3  & 8 & 5 \\ \hline
@@ -532,7 +534,7 @@ the number of occurences of each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Parch} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value}              \\ \hline
@@ -552,7 +554,8 @@ the number of occurences of each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each value}
+    \caption{Number of occurrences of each value of the \textbf{Parch} 
+             attribute}
     \begin{tabular}{|l|l|l|l|l|l|l|l|}
         \hline
         \textbf{Value}  & 0   & 1  & 2  & 5 & 4 & 3 & 6 \\ \hline
@@ -606,7 +609,7 @@ the attribute characteristics respectively.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Ticket} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -639,7 +642,7 @@ excerpt from this column and the attribute characteristics respectively.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Fare} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value}                  \\ \hline
@@ -658,7 +661,7 @@ excerpt from this column and the attribute characteristics respectively.
 \end{table}
 
 \subsection{Analysis}
-The distribution of values is skewed and tail-heavy, perhaps loser to 
+The distribution of values is skewed and tail-heavy, perhaps closer to 
 lognormal distribution. The figure \ref{pic:fare_distribution} shows the
 histogram.
 
@@ -714,7 +717,7 @@ the attribute characteristics respectively.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Cabin} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -755,7 +758,7 @@ characteristics.
 
 \begin{table}[!hp]
     \centering
-    \caption{Attribute characteristics}
+    \caption{Characteristics of the \textbf{Embarked} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Characteristic}   & \textbf{Value} \\ \hline
@@ -773,7 +776,7 @@ of each value.
 
 \begin{table}[!hp]
     \centering
-    \caption{Number of occurrences of each value}
+    \caption{Number of occurrences of each value of the \textbf{Embarked} attribute}
     \begin{tabular}{|l|l|}
         \hline
         \textbf{Value} & \textbf{Number} \\ \hline
@@ -791,9 +794,18 @@ passengers boarded the ship at Southampton.
 \begin{figure}[!hp]
     \centering
     \includegraphics[width=0.5\textwidth]{embarked_distribution}
-    \caption{The distribution of number of passengers by the port of embarkation}
+    \caption{Proportion of passengers by the port of embarkation}
     \label{pic:embarked_distribution}
 \end{figure}
+
+Let's check if there is a pattern between survival rate and port of embarkation.
+As shown on the figure \ref{pic:embarked_survival_rate} most of the survivors
+among passengers boarded the ship in Cherbourg. We remember that people of 
+hier cocio-economic status had better chance to survive, thus let's heck the
+proportion of survivors by the port of embarkation separetely for each 
+\textbf{Pclass}. As you can see, the most of the passenges from the first
+\textbf{Pclass} boarded the ship in Cherbourg. This may explain the observed 
+pattern.
 
 \begin{figure}[!hp]
     \centering
@@ -808,3 +820,20 @@ passengers boarded the ship at Southampton.
     \caption{The proportion of survived passengers by the port of embarkation separately for each \textbf{Pclass}}
     \label{pic:embarked_survival_rate_by_pclass}
 \end{figure}
+
+
+\section{Correlation among attributes}
+Finally, let's examine the correlation among the numerical attributes.
+The figure \ref{pic:diag_cor_matrix_0} shows the diagonal correlation matrix.
+Some attribute pairs are highly correlated, thus possibly we will make new 
+decorrelated features from them.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{diag_cor_matrix_0}
+    \caption{Correlation matrix}
+    \label{pic:diag_cor_matrix_0}
+\end{figure}
+
+This concludes the exploratory analysis. In the next section, we will clean 
+the existing data and create new features.
