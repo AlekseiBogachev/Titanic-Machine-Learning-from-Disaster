@@ -1,6 +1,6 @@
 # Titanic-Machine-Learning-from-Disaster
 ## Краткое описание
-Анализ данных для [Titanic ML competition](https://www.kaggle.com/c/titanic).
+Решение для [Titanic ML competition](https://www.kaggle.com/c/titanic): анализ данных, модель, предсказания, результат на Kaggle.
 
 Цель сделать модель, которая, получив данные о пассажире Титаника, предскажет выжил
 пассажир в кораблекрушении или нет.
@@ -9,8 +9,9 @@
 признаков.
 
 ## Структура репозитория
-- **datasets** - набор данных, взятый на Kaggle.
-- **docs** - проект отчёта в LaTex.
-    - [report.pdf](https://github.com/AlekseiBogachev/Titanic-Machine-Learning-from-Disaster/blob/main/docs/report.pdf) - отчёт в формате pdf.
+- **datasets** - набор данных и таблица с результатами, взятые на Kaggle.
 - **sources**
-    - **Titanic-Machine-Learning-from-Disaster.ipynb** - Ноутбук с анализом данных. В будущем в него будут добавлены модели.
+    - **Titanic-Machine-Learning-from-Disaster.ipynb** - Тетрадка с решением задачи
+    - **Titanic.jpg** и **scores_on_kaggle.PNG** - иллюстрации для тетрадки
+    - **submission.csv** - предсказания, отправленные на Kaggle
+    - **Файлы с расширением .pkl** - сохранённые модели
