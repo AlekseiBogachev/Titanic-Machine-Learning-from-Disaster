@@ -1,0 +1,5 @@
+docker run -i -t -p 8888:8888 -v "$(pwd):/projects" --name titanic titanic
+
+conda activate titanic
+
+jupyter notebook --notebook-dir=/projects --ip='*' --port=8888 --no-browser --allow-root
