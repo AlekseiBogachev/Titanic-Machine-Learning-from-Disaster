@@ -1,4 +1,6 @@
 # Titanic-Machine-Learning-from-Disaster
+**Статус проекта:** планируются доработки
+
 <img alt="Титаник" src="/sources/Titanic.jpg" height="500">
 
 
