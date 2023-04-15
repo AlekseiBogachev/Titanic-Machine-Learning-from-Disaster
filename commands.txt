@@ -1,0 +1,8 @@
+#docker-compose --project-name titanic up -d
+docker-compose up -d
+
+docker-compose exec anaconda /bin/bash
+
+conda activate titanic
+
+jupyter notebook --notebook-dir=/projects --ip='*' --port=8888 --no-browser --allow-root

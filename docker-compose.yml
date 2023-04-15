@@ -1,0 +1,26 @@
+services:
+  anaconda:
+    container_name: anaconda
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./:/projects"
+    stdin_open: true
+    tty: true   
+    # command: /bin/bash
+    depends_on: 
+      - postgres    
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
