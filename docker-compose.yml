@@ -10,13 +10,13 @@ services:
       - "./:/projects"
     stdin_open: true
     tty: true   
-    # command: /bin/bash
+    command: /bin/bash
     depends_on: 
       - postgres    
 
   postgres:
     container_name: postgres
-    image: postgres:latest
+    image: postgres:alpine3.17
     environment:
       POSTGRES_PASSWORD: password
     volumes:
