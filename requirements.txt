@@ -7,6 +7,7 @@ dependencies:
   - _libgcc_mutex=0.1
   - _openmp_mutex=4.5
   - _py-xgboost-mutex=2.0
+  - alembic=1.10.2
   - alsa-lib=1.2.8
   - anyio=3.5.0
   - argon2-cffi=21.3.0
@@ -30,6 +31,9 @@ dependencies:
   - cffi=1.15.1
   - charset-normalizer=2.0.4
   - click=8.1.3
+  - cmaes=0.9.1
+  - colorama=0.4.6
+  - colorlog=6.7.0
   - comm=0.1.2
   - contourpy=1.0.7
   - cryptography=38.0.4
@@ -55,6 +59,7 @@ dependencies:
   - glib=2.74.1
   - glib-tools=2.74.1
   - graphite2=1.3.14
+  - greenlet=2.0.2
   - gst-plugins-base=1.22.0
   - gstreamer=1.22.0
   - harfbuzz=6.0.0
@@ -136,6 +141,7 @@ dependencies:
   - libzlib=1.2.13
   - lightgbm=3.3.5
   - lz4-c=1.9.4
+  - mako=1.2.4
   - markupsafe=2.1.1
   - matplotlib=3.7.1
   - matplotlib-base=3.7.1
@@ -159,6 +165,7 @@ dependencies:
   - numpy=1.24.2
   - openjpeg=2.5.0
   - openssl=3.1.0
+  - optuna=3.1.0
   - packaging=22.0
   - pandas=2.0.0
   - pandocfilters=1.5.0
@@ -177,6 +184,7 @@ dependencies:
   - prompt-toolkit=3.0.20
   - prompt_toolkit=3.0.20
   - psutil=5.9.0
+  - psycopg2=2.9.3
   - pthread-stubs=0.3
   - ptyprocess=0.7.0
   - pulseaudio-client=16.1
@@ -196,6 +204,7 @@ dependencies:
   - python-tzdata=2023.3
   - python_abi=3.9
   - pytz=2022.7
+  - pyyaml=6.0
   - pyzmq=23.2.0
   - qt-main=5.15.8
   - qtconsole=5.4.0
@@ -212,6 +221,7 @@ dependencies:
   - six=1.16.0
   - sniffio=1.2.0
   - soupsieve=2.3.2.post1
+  - sqlalchemy=2.0.8
   - stack_data=0.2.0
   - statsmodels=0.13.5
   - terminado=0.17.1
@@ -221,6 +231,7 @@ dependencies:
   - toml=0.10.2
   - tomli=2.0.1
   - tornado=6.2
+  - tqdm=4.65.0
   - traitlets=5.7.1
   - typing-extensions=4.4.0
   - typing_extensions=4.4.0
@@ -251,6 +262,7 @@ dependencies:
   - xorg-xf86vidmodeproto=2.3.1
   - xorg-xproto=7.0.31
   - xz=5.2.6
+  - yaml=0.2.5
   - zeromq=4.3.4
   - zipp=3.11.0
   - zlib=1.2.13
