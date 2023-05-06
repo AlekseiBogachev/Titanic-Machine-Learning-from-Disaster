@@ -86,10 +86,8 @@ optuna_storage = optuna.storages.RDBStorage('postgresql://postgres:password@post
 командную строку контейнера с *Anaconda*;
 - выполнить `conda activate titanic`, чтобы активировать окружение проекта;
 - выполнить `jupyter notebook --notebook-dir=/projects --ip='*' --port=8888 --no-browser --allow-root`, чтобы запусить *jupyter notebook* на порте 8888.
-
-Далее проект можно будет запускать командой `docker-compose up -d` и останавливать,
-например командой `docker-compose down`. Обе команды должны выполняться из папки
-с **docker-compose.yml**.
+- Проект можно останавить, например командой `docker-compose down`(выполнять из папки
+с **docker-compose.yml**).
 
 Про запуск *Anaconda* в *Docker* можно почитать [здесь](https://docs.anaconda.com/anaconda/user-guide/tasks/docker/).
 
