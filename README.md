@@ -91,6 +91,10 @@ optuna_storage = optuna.storages.RDBStorage('postgresql://postgres:password@post
 
 Про запуск *Anaconda* в *Docker* можно почитать [здесь](https://docs.anaconda.com/anaconda/user-guide/tasks/docker/).
 
+***Примечание***  
+Взависимости от версии и настроект *Docker* может потребоваться запуск от имени администратора и
+и замена части команды `docker-compose` на `sudo docker compose`.
+
 ### Запуск в *Docker*
 Для запуска проекта в *Docker* необходимо выполнить следующие шаги (предполагается, что
 командная строка запущена из каталога с проектом):
@@ -110,6 +114,9 @@ optuna_storage = optuna.storages.RDBStorage('postgresql://postgres:password@post
 После выполнения `docker start -i titanic` необходимо снова активировать окружение и запускать *jupyter notebook*.
 
 Про запуск *Anaconda* в *Docker* можно почитать [здесь](https://docs.anaconda.com/anaconda/user-guide/tasks/docker/).
+
+***Примечание***  
+Взависимости от версии и настроек *Docker* может потребоваться запуск от имени администратора.
 
 ### Запуск в *Anaconda*
 Для запуска проекта в установленном дистрибутиве *Anaconda* необходимо:
