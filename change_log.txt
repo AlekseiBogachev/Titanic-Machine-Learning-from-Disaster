@@ -1,0 +1,5 @@
+2023-08-08 7:35
+
+1. Исследовательский анализ перенесён в файл EDA.ipynb
+2. Часть повторяющихся функций (make_notifier, plot_ecdf_with_target, check_target_imbalance, plot_corr_matrix) вынесены в отдельный модуль useful_funcs.py.
+3. Создан файл change_log.txt, в который будет заноситься информация об изменениях в проекте.
