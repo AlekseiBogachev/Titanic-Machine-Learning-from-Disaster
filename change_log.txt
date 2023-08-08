@@ -1,5 +1,21 @@
+2023-08-08 21:26
+
+1. В useful_funcs.py перенесены функции для оценки моделей:
+- get_cv_scores,
+- get_train_score,
+- get_cv_pred,
+- plot_roc_curve_for_random_clf,
+- plot_roc_curve,
+- agg_scores,
+- score_box_plot,
+- evaluate_model,
+- compare_models.
+
+
+
 2023-08-08 7:35
 
 1. Исследовательский анализ перенесён в файл EDA.ipynb
 2. Часть повторяющихся функций (make_notifier, plot_ecdf_with_target, check_target_imbalance, plot_corr_matrix) вынесены в отдельный модуль useful_funcs.py.
 3. Создан файл change_log.txt, в который будет заноситься информация об изменениях в проекте.
+
