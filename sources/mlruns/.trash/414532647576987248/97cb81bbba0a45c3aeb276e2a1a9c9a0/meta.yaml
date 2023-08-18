@@ -1,0 +1,16 @@
+artifact_uri: file:///home/aleksei/Projects/Titanic-Machine-Learning-from-Disaster/sources/mlruns/414532647576987248/97cb81bbba0a45c3aeb276e2a1a9c9a0/artifacts
+deleted_time: 1692388254767
+end_time: 1692388236040
+entry_point_name: ''
+experiment_id: '414532647576987248'
+lifecycle_stage: deleted
+run_id: 97cb81bbba0a45c3aeb276e2a1a9c9a0
+run_name: best_XGBoost_with_pipeline
+run_uuid: 97cb81bbba0a45c3aeb276e2a1a9c9a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1692388235872
+status: 4
+tags: []
+user_id: aleksei
