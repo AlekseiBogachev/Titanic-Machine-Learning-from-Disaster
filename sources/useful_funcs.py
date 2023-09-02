@@ -64,7 +64,9 @@ def check_target_imbalance(vals):
     print(f"Доля погибших пассажиров - {1 - mean_val: .2%}")
 
 
-def plot_corr_matrix(df, size=(7, 7), vmin=-1, vmax=1, method="pearson", annot=True):
+def plot_corr_matrix(
+    df, size=(7, 7), vmin=-1, vmax=1, method="pearson", annot=True
+):
     corr = df.corr(method=method)
 
     mask = np.triu(np.ones_like(corr, dtype=bool))
@@ -125,7 +127,9 @@ def get_cv_pred(estimator, X, y, cv, n_jobs, method="predict"):
     на каждом из фолдов.
     """
 
-    y_pred = cross_val_predict(estimator, X, y, cv=cv, method=method, n_jobs=n_jobs)
+    y_pred = cross_val_predict(
+        estimator, X, y, cv=cv, method=method, n_jobs=n_jobs
+    )
 
     if method == "predict_proba":
         y_pred = y_pred[:, -1]
@@ -180,8 +184,12 @@ def agg_scores(scores, label, score_names):
         .rename(columns=lambda string: "_".join(["cv", string]))
     )
 
-    cols_with_train_scores = ["train_" + score_name for score_name in score_names]
-    train_score = scores.query("classifier == @label").loc[0, cols_with_train_scores]
+    cols_with_train_scores = [
+        "train_" + score_name for score_name in score_names
+    ]
+    train_score = scores.query("classifier == @label").loc[
+        0, cols_with_train_scores
+    ]
 
     res.loc[:, "train_score"] = train_score.transpose().to_numpy()
 
@@ -199,7 +207,9 @@ def score_box_plot(score, metric, aspect=1, rot=0):
         label=metric + " на тренировочном наборе",
     )
 
-    g = sns.boxplot(data=score, x="classifier", y=metric, color="white", showmeans=True)
+    g = sns.boxplot(
+        data=score, x="classifier", y=metric, color="white", showmeans=True
+    )
 
     g.tick_params(axis="x", rotation=rot)
     g.set_xlabel("Классификатор")
@@ -227,7 +237,9 @@ def evaluate_model(
         scores[metric] = get_cv_scores(
             estimator, X, y, score=metric, cv=cv, n_jobs=n_jobs
         )
-        scores["train_" + metric] = get_train_score(estimator, X, y, score=metric)
+        scores["train_" + metric] = get_train_score(
+            estimator, X, y, score=metric
+        )
 
     y_scores = get_cv_pred(estimator, X, y, method=method, cv=cv, n_jobs=n_jobs)
     ax = plot_roc_curve(y, y_scores, label=label, ax=ax)
@@ -252,7 +264,9 @@ def compare_models(
 
     fig, ax = plot_roc_curve_for_random_clf()
 
-    for i, (classifier, method, label) in enumerate(zip(classifiers, methods, labels)):
+    for i, (classifier, method, label) in enumerate(
+        zip(classifiers, methods, labels)
+    ):
         print(f"{i+1}. {label}")
 
         metrics_list = ["accuracy", "f1", "roc_auc"]
