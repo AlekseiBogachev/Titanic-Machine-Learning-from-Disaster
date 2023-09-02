@@ -22,11 +22,11 @@ dependencies:
   - brotli-bin=1.0.9
   - brotlipy=0.7.0
   - bzip2=1.0.8
-  - ca-certificates=2022.12.7
+  - ca-certificates=2023.7.22
   - cairo=1.16.0
   - catboost=0.26.1
   - category_encoders=2.6.0
-  - certifi=2022.12.7
+  - certifi=2023.7.22
   - cffi=1.15.1
   - charset-normalizer=2.0.4
   - click=8.1.3
@@ -44,6 +44,7 @@ dependencies:
   - entrypoints=0.4
   - executing=0.8.3
   - expat=2.5.0
+  - flake8=6.0.0
   - flit-core=3.6.0
   - font-ttf-dejavu-sans-mono=2.37
   - font-ttf-inconsolata=2.001
@@ -145,9 +146,12 @@ dependencies:
   - matplotlib=3.7.1
   - matplotlib-base=3.7.1
   - matplotlib-inline=0.1.6
+  - mccabe=0.7.0
   - mistune=0.8.4
   - mpg123=1.31.3
   - munkres=1.1.4
+  - mypy=1.5.1
+  - mypy_extensions=1.0.0
   - mysql-common=8.0.32
   - mysql-libs=8.0.32
   - nbclassic=0.4.8
@@ -188,7 +192,9 @@ dependencies:
   - pulseaudio-client=16.1
   - pure_eval=0.2.2
   - py-xgboost=1.7.4
+  - pycodestyle=2.10.0
   - pycparser=2.21
+  - pyflakes=3.0.1
   - pygments=2.11.2
   - pyopenssl=22.0.0
   - pyparsing=3.0.9
@@ -333,7 +339,6 @@ dependencies:
       - msrest==0.7.1
       - msrestazure==0.6.4
       - multidict==6.0.4
-      - mypy-extensions==1.0.0
       - ndg-httpsclient==0.5.1
       - oauthlib==3.2.2
       - orjson==3.9.4
