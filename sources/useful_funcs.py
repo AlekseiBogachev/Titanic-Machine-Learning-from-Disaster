@@ -172,9 +172,9 @@ def plot_roc_curve(y_train, y_scores, label, ax, style=""):
 
 
 def agg_scores(scores, label, score_names):
-    """Возвращает датафрейм, содержащий среднее, медианное, минимальное и максимальное
-    значения метрики, полученное с помощью кросс-валидации, и оценку метрики на
-    тренировочном наборе.
+    """Возвращает датафрейм, содержащий среднее, медианное, минимальное и
+    максимальное значения метрики, полученное с помощью кросс-валидации, и
+    оценку метрики на тренировочном наборе.
     """
 
     res = (
@@ -215,7 +215,8 @@ def score_box_plot(score, metric, aspect=1, rot=0):
     g.set_xlabel("Классификатор")
     g.set_ylabel(metric)
     g.set_title(
-        f"Значения метрики {metric} по результатм\nкросс-валидации для разных классификаторов"
+        f"Значения метрики {metric} по результатм"
+        "\nкросс-валидации для разных классификаторов"
     )
     sns.move_legend(g, "lower right")
 
@@ -225,8 +226,9 @@ def score_box_plot(score, metric, aspect=1, rot=0):
 def evaluate_model(
     estimator, X, y, label, metrics, ax, cv, n_jobs, method="predict_proba"
 ):
-    """Печатает диаграмму размаха для результатов кросс-валидации указанной метрики.
-    Отмечает на диаграмме результат, полученный на тренировочном наборе данных.
+    """Печатает диаграмму размаха для результатов кросс-валидации указанной
+    метрики. Отмечает на диаграмме результат, полученный на тренировочном
+    наборе данных.
     """
 
     cols = ["classifier"] + metrics + ["train_" + value for value in metrics]
@@ -284,7 +286,9 @@ def compare_models(
         )
 
         print(f"Значения метрик для {label}")
-        display(agg_scores(scores, label=label, score_names=metrics_list))
+        display(                                                    # noqa: F821
+            agg_scores(scores, label=label, score_names=metrics_list)
+        )
 
         all_scores = pd.concat([all_scores, scores])
 
