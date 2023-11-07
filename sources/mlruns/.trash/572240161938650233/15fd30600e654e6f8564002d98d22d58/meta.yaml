@@ -1,8 +1,9 @@
 artifact_uri: file:///home/aleksei/Projects/Titanic-Machine-Learning-from-Disaster/sources/mlruns/572240161938650233/15fd30600e654e6f8564002d98d22d58/artifacts
+deleted_time: 1699268396448
 end_time: 1693197181877
 entry_point_name: ''
 experiment_id: '572240161938650233'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 15fd30600e654e6f8564002d98d22d58
 run_name: best_XGBoost_with_pipeline
 run_uuid: 15fd30600e654e6f8564002d98d22d58
